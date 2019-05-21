@@ -1,0 +1,21 @@
+{
+  "name": "ame-cli-service",
+  "version": "0.1.0",
+  "description": "local service for vue-cli projects",
+  "bin": {
+    "ame-cli-service": "bin/ame-cli-service.js"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@vue/cli-service": "^3.5.5",
+    "@vue/cli-shared-utils": "^3.7.0",
+    "minimist": "^1.2.0",
+    "semver": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=8.9"
+  }
+}
