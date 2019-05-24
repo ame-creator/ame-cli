@@ -69,7 +69,7 @@
     "request-promise-native": "^1.0.7",
     "rimraf": "^2.6.2",
     "semver": "^5.5.0",
-    "typescript": "^3.3.3333",
+    "typescript": "^3.4.3",
     "vuepress": "1.0.0-alpha.44",
     "vuepress-theme-vue": "^1.1.0",
     "webpack": ">=4 < 4.29",

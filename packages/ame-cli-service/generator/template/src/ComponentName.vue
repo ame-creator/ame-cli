@@ -1,5 +1,5 @@
 <template>
-  <div class="xm-component-demo">
+  <div class="am-<%= componentNameLowercase %>">
     <div class="title">
       {{ title }}
     </div>
@@ -13,7 +13,7 @@
 import Button from 'xm-vue-ui/lib/button'
 
 export default {
-  name: 'XmComponentDemo',
+  name: '<%= componentName %>',
 
   components: {
     XmButton: Button
@@ -33,7 +33,7 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-.xm-component-demo {
+.am-<%= componentNameLowercase %> {
   height: 100%;
   text-align: center;
 

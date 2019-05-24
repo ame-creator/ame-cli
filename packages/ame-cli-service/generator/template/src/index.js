@@ -1,3 +1,3 @@
-import hehe from './hehe.vue'
+import <%= componentName %> from './<%= componentName %>.vue'
 
-export default hehe
+export default <%= componentName %>
