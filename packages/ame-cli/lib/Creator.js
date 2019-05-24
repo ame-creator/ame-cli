@@ -1,7 +1,6 @@
 const chalk = require('chalk')
 const inquirer = require('inquirer')
 const EventEmitter = require('events')
-const execa = require('execa')
 const cloneDeep = require('lodash.clonedeep')
 const Generator = require('@vue/cli/lib/Generator')
 const sortObject = require('@vue/cli/lib/util/sortObject')
@@ -30,7 +29,8 @@ module.exports = class Creator extends EventEmitter {
     preset = cloneDeep(preset)
     // inject core service
     preset.plugins['ame-cli-service'] = Object.assign({
-      projectName: name
+      projectName: name,
+      version: '0.1.0'
     }, preset)
 
     const pkg = {
@@ -60,18 +60,12 @@ module.exports = class Creator extends EventEmitter {
     this.emit('creation', { event: 'plugins-install' })
     if (isTestOrDebug) {
       // in development, avoid installation process
-      // await require('./util/setupDevProject')(context)
-      // await execa('npm', ['link', 'ame-cli-service'], {
-      //   cwd: context
-      // })
+      await require('./util/setupDevProject')(context)
     } else {
       await installDeps(context, 'npm', cliOptions.registry)
     }
 
     const plugins = await this.resolvePlugins(preset.plugins)
-
-    console.log('new Generator, context:', context)
-    console.log('pkg:', pkg, 'plugins:', plugins)
 
     const generator = new Generator(context, {
       pkg,

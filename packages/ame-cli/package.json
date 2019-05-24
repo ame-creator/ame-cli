@@ -19,12 +19,16 @@
     "access": "public"
   },
   "dependencies": {
-    "@vue/cli": "^3.5.5",
+    "@vue/cli": "^3.7.0",
     "@vue/cli-shared-utils": "^3.7.0",
     "chalk": "^2.4.2",
+    "commander": "^2.20.0",
+    "envinfo": "^7.3.1",
     "execa": "^1.0.0",
     "inquirer": "^6.3.1",
-    "lodash.clonedeep": "^4.5.0"
+    "lodash.clonedeep": "^4.5.0",
+    "minimist": "^1.2.0",
+    "semver": "^6.1.0"
   },
   "engines": {
     "node": ">=8.9"
