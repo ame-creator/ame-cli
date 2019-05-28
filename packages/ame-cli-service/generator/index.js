@@ -17,7 +17,9 @@ module.exports = (api, options, rootOptions) => {
       'xm-vue-ui': '^1.2.0'
     },
     devDependencies: {
-      'vue-template-compiler': '^2.6.10'
+      'vue-template-compiler': '^2.6.10',
+      sass: '^1.18.0',
+      'sass-loader': '^7.1.0'
     }
   })
 

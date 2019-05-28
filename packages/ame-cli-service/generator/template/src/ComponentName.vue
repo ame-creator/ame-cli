@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "node_modules/xm-vue-ui/lib/button/style/index.scss";
+@import "~xm-vue-ui/lib/button/style/index.scss";
 </style>
 
 <style lang="scss" scoped>
