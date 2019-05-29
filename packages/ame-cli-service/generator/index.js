@@ -9,8 +9,8 @@ module.exports = (api, options, rootOptions) => {
     scripts: {
       'serve': 'ame-cli-service serve',
       'build': 'ame-cli-service build',
-      'doc:serve': 'ame-cli-service doc-serve',
-      'doc:build': 'ame-cli-service doc-build'
+      'doc:serve': 'ame-cli-service doc:serve',
+      'doc:build': 'ame-cli-service doc:build'
     },
     dependencies: {
       'vue': '^2.6.10',

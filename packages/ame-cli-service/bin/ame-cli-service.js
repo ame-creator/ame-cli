@@ -18,8 +18,24 @@ const program = require('commander')
 program
   .command('serve')
   .description('serve demo in development mode')
+  .option('-o, --open', 'Open browser')
   .action(cmd => {
     require('../lib/serve')(cleanArgs(cmd))
+  })
+
+program
+  .command('doc:serve')
+  .description('serve doc in development mode')
+  .option('-o, --open', 'Open browser')
+  .action(cmd => {
+    require('../lib/doc').serve(cleanArgs(cmd))
+  })
+
+program
+  .command('doc:build')
+  .description('build doc')
+  .action(cmd => {
+    require('../lib/doc').build(cleanArgs(cmd))
   })
 
 // output help information on unknown commands

@@ -26,6 +26,7 @@
     "resolve": "^1.11.0",
     "semver": "^6.0.0",
     "vue": "^2.6.10",
+    "vue-styleguidist": "^3.13.7",
     "vue-template-compiler": "^2.6.10"
   },
   "engines": {
