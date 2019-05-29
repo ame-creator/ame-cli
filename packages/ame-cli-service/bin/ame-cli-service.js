@@ -24,6 +24,13 @@ program
   })
 
 program
+  .command('build')
+  .description('build library in production mode')
+  .action(cmd => {
+    require('../lib/build')(cleanArgs(cmd))
+  })
+
+program
   .command('doc:serve')
   .description('serve doc in development mode')
   .option('-o, --open', 'Open browser')
