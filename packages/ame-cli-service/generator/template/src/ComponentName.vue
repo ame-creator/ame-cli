@@ -3,20 +3,20 @@
     <div class="title">
       {{ title }}
     </div>
-    <xm-button type="primary">
-      xm-vue-ui示例
-    </xm-button>
+    <v-btn color="primary">
+      vuetify示例
+    </v-btn>
   </div>
 </template>
 
 <script>
-import Button from 'xm-vue-ui/lib/button'
+import { VBtn } from 'vuetify/lib'
 
 export default {
   name: '<%= componentName %>',
 
   components: {
-    XmButton: Button
+    VBtn
   },
 
   props: {
@@ -28,18 +28,12 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "~xm-vue-ui/lib/button/style/index.scss";
-</style>
+<style lang="stylus">
+.am-hehe
+  height: 100%
+  text-align: center
 
-<style lang="scss" scoped>
-.am-<%= componentNameLowercase %> {
-  height: 100%;
-  text-align: center;
-
-  .title {
-    font-size: 20px;
-    margin: 10px 0;
-  }
-}
+  .title
+    font-size: 20px
+    margin: 10px 0
 </style>

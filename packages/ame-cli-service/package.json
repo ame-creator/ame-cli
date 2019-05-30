@@ -36,9 +36,12 @@
     "rollup-plugin-terser": "^5.0.0",
     "rollup-plugin-vue": "^5.0.0",
     "semver": "^6.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "vue": "^2.6.10",
     "vue-styleguidist": "^3.13.7",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vuetify": "^1.5.14"
   },
   "engines": {
     "node": ">=8.9"

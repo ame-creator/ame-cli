@@ -2,5 +2,5 @@
 
 基础用法：
 ```jsx
-<<%= componentName %> />
+<<%= componentName %> title="Demo" />
 ```

@@ -4810,8 +4810,8 @@ concat-map@0.0.1:
 
 concat-stream@1.6.2, concat-stream@^1.5.0, concat-stream@^1.6.0:
   version "1.6.2"
-  resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.6.2.tgz#904bdf194cd3122fc675c77fc4ac3d4ff0fd1a34"
-  integrity sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==
+  resolved "https://registry.npm.taobao.org/concat-stream/download/concat-stream-1.6.2.tgz#904bdf194cd3122fc675c77fc4ac3d4ff0fd1a34"
+  integrity sha1-kEvfGUzTEi/Gdcd/xKw9T/D9GjQ=
   dependencies:
     buffer-from "^1.0.0"
     inherits "^2.0.3"
@@ -6868,7 +6868,7 @@ extract-files@^5.0.1:
 
 extract-zip@^1.6.6:
   version "1.6.7"
-  resolved "https://registry.yarnpkg.com/extract-zip/-/extract-zip-1.6.7.tgz#a840b4b8af6403264c8db57f4f1a74333ef81fe9"
+  resolved "https://registry.npm.taobao.org/extract-zip/download/extract-zip-1.6.7.tgz#a840b4b8af6403264c8db57f4f1a74333ef81fe9"
   integrity sha1-qEC0uK9kAyZMjbV/Txp0Mz74H+k=
   dependencies:
     concat-stream "1.6.2"
@@ -6951,7 +6951,7 @@ fb-watchman@^2.0.0:
 
 fd-slicer@~1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/fd-slicer/-/fd-slicer-1.0.1.tgz#8b5bcbd9ec327c5041bf9ab023fd6750f1177e65"
+  resolved "https://registry.npm.taobao.org/fd-slicer/download/fd-slicer-1.0.1.tgz#8b5bcbd9ec327c5041bf9ab023fd6750f1177e65"
   integrity sha1-i1vL2ewyfFBBv5qwI/1nUPEXfmU=
   dependencies:
     pend "~1.2.0"
@@ -12567,8 +12567,8 @@ process@~0.5.1:
 
 progress@^2.0.0, progress@^2.0.1:
   version "2.0.3"
-  resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
-  integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
+  resolved "https://registry.npm.taobao.org/progress/download/progress-2.0.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fprogress%2Fdownload%2Fprogress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
+  integrity sha1-foz42PW48jnBvGi+tOt4Vn1XLvg=
 
 promise-inflight@^1.0.1:
   version "1.0.1"
@@ -12670,7 +12670,7 @@ proxy-addr@~2.0.5:
 
 proxy-from-env@^1.0.0:
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.0.0.tgz#33c50398f70ea7eb96d21f7b817630a55791c7ee"
+  resolved "https://registry.npm.taobao.org/proxy-from-env/download/proxy-from-env-1.0.0.tgz#33c50398f70ea7eb96d21f7b817630a55791c7ee"
   integrity sha1-M8UDmPcOp+uW0h97gXYwpVeRx+4=
 
 prr@~1.0.1:
@@ -12860,8 +12860,8 @@ punycode@^1.2.4, punycode@^1.4.1:
 
 puppeteer@1.11.0:
   version "1.11.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-1.11.0.tgz#63cdbe12b07275cd6e0b94bce41f3fcb20305770"
-  integrity sha512-iG4iMOHixc2EpzqRV+pv7o3GgmU2dNYEMkvKwSaQO/vMZURakwSOn/EYJ6OIRFYOque1qorzIBvrytPIQB3YzQ==
+  resolved "https://registry.npm.taobao.org/puppeteer/download/puppeteer-1.11.0.tgz#63cdbe12b07275cd6e0b94bce41f3fcb20305770"
+  integrity sha1-Y82+ErBydc1uC5S85B8/yyAwV3A=
   dependencies:
     debug "^4.1.0"
     extract-zip "^1.6.6"
@@ -14874,8 +14874,8 @@ stylehacks@^4.0.0:
 
 stylus-loader@^3.0.2:
   version "3.0.2"
-  resolved "https://registry.yarnpkg.com/stylus-loader/-/stylus-loader-3.0.2.tgz#27a706420b05a38e038e7cacb153578d450513c6"
-  integrity sha512-+VomPdZ6a0razP+zinir61yZgpw2NfljeSsdUF5kJuEzlo3khXhY19Fn6l8QQz1GRJGtMCo8nG5C04ePyV7SUA==
+  resolved "https://registry.npm.taobao.org/stylus-loader/download/stylus-loader-3.0.2.tgz#27a706420b05a38e038e7cacb153578d450513c6"
+  integrity sha1-J6cGQgsFo44DjnyssVNXjUUFE8Y=
   dependencies:
     loader-utils "^1.0.2"
     lodash.clonedeep "^4.5.0"
@@ -14883,7 +14883,7 @@ stylus-loader@^3.0.2:
 
 stylus@^0.54.5:
   version "0.54.5"
-  resolved "https://registry.yarnpkg.com/stylus/-/stylus-0.54.5.tgz#42b9560931ca7090ce8515a798ba9e6aa3d6dc79"
+  resolved "https://registry.npm.taobao.org/stylus/download/stylus-0.54.5.tgz#42b9560931ca7090ce8515a798ba9e6aa3d6dc79"
   integrity sha1-QrlWCTHKcJDOhRWnmLqeaqPW3Hk=
   dependencies:
     css-parse "1.7.x"
@@ -15989,8 +15989,8 @@ vue-runtime-helpers@1.0.0:
 
 vue-server-renderer@^2.5.16, vue-server-renderer@^2.6.7:
   version "2.6.10"
-  resolved "https://registry.yarnpkg.com/vue-server-renderer/-/vue-server-renderer-2.6.10.tgz#cb2558842ead360ae2ec1f3719b75564a805b375"
-  integrity sha512-UYoCEutBpKzL2fKCwx8zlRtRtwxbPZXKTqbl2iIF4yRZUNO/ovrHyDAJDljft0kd+K0tZhN53XRHkgvCZoIhug==
+  resolved "https://registry.npm.taobao.org/vue-server-renderer/download/vue-server-renderer-2.6.10.tgz#cb2558842ead360ae2ec1f3719b75564a805b375"
+  integrity sha1-yyVYhC6tNgri7B83GbdVZKgFs3U=
   dependencies:
     chalk "^1.1.3"
     hash-sum "^1.0.2"
@@ -16079,8 +16079,8 @@ vue-styleguidist@^3.13.7:
 
 vue-template-compiler@^2.5.16, vue-template-compiler@^2.6.10, vue-template-compiler@^2.6.7:
   version "2.6.10"
-  resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.10.tgz#323b4f3495f04faa3503337a82f5d6507799c9cc"
-  integrity sha512-jVZkw4/I/HT5ZMvRnhv78okGusqe0+qH2A0Em0Cp8aq78+NK9TII263CDVz2QXZsIT+yyV/gZc/j/vlwa+Epyg==
+  resolved "https://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.6.10.tgz#323b4f3495f04faa3503337a82f5d6507799c9cc"
+  integrity sha1-MjtPNJXwT6o1AzN6gvXWUHeZycw=
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
@@ -16092,8 +16092,8 @@ vue-template-es2015-compiler@^1.9.0:
 
 vue@^2.5.16, vue@^2.6.10, vue@^2.6.7, vue@^2.6.9:
   version "2.6.10"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
-  integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
+  resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
+  integrity sha1-pysaQqTYKnIepDjRtr9V5mGVxjc=
 
 vuepress-html-webpack-plugin@^3.2.0:
   version "3.2.0"
@@ -16128,6 +16128,11 @@ vuepress@1.0.0-alpha.44:
     "@vuepress/core" "^1.0.0-alpha.44"
     "@vuepress/theme-default" "^1.0.0-alpha.44"
     cac "^6.3.9"
+
+vuetify@^1.5.14:
+  version "1.5.14"
+  resolved "https://registry.npm.taobao.org/vuetify/download/vuetify-1.5.14.tgz#ff67d0b8a398be5297da159b6cd1b31f4d2898b8"
+  integrity sha1-/2fQuKOYvlKX2hWbbNGzH00omLg=
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"
@@ -16690,8 +16695,8 @@ ws@^5.2.0:
 
 ws@^6.0.0, ws@^6.1.0:
   version "6.2.1"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-6.2.1.tgz#442fdf0a47ed64f59b6a5d8ff130f4748ed524fb"
-  integrity sha512-GIyAXC2cB7LjvpgMt9EKS2ldqr0MTrORaleiOno6TweZ6r3TKtoFQWay/2PceJ3RuBasOHzXNn5Lrw1X0bEjqA==
+  resolved "https://registry.npm.taobao.org/ws/download/ws-6.2.1.tgz#442fdf0a47ed64f59b6a5d8ff130f4748ed524fb"
+  integrity sha1-RC/fCkftZPWbal2P8TD0dI7VJPs=
   dependencies:
     async-limiter "~1.0.0"
 
@@ -16851,7 +16856,7 @@ yargs@~3.10.0:
 
 yauzl@2.4.1:
   version "2.4.1"
-  resolved "https://registry.yarnpkg.com/yauzl/-/yauzl-2.4.1.tgz#9528f442dab1b2284e58b4379bb194e22e0c4005"
+  resolved "https://registry.npm.taobao.org/yauzl/download/yauzl-2.4.1.tgz#9528f442dab1b2284e58b4379bb194e22e0c4005"
   integrity sha1-lSj0QtqxsihOWLQ3m7GU4i4MQAU=
   dependencies:
     fd-slicer "~1.0.1"

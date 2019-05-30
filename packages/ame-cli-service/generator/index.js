@@ -3,8 +3,6 @@ const decamelize = require('decamelize')
 const { renameFiles } = require('./fileHelper')
 
 module.exports = (api, options, rootOptions) => {
-  console.log('generator, options:', options, 'rootOptions:', rootOptions)
-
   api.extendPackage({
     scripts: {
       'serve': 'ame-cli-service serve',
@@ -17,9 +15,7 @@ module.exports = (api, options, rootOptions) => {
       'xm-vue-ui': '^1.2.0'
     },
     devDependencies: {
-      'vue-template-compiler': '^2.6.10',
-      sass: '^1.18.0',
-      'sass-loader': '^7.1.0'
+      'vue-template-compiler': '^2.6.10'
     }
   })
 
