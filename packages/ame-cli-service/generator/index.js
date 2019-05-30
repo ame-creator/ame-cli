@@ -23,6 +23,31 @@ module.exports = (api, options, rootOptions) => {
     }
   })
 
+  if (!options.cssPreprocessor) {
+    options.cssPreprocessor = 'stylus'
+  }
+
+  if (options.cssPreprocessor) {
+    const deps = {
+      sass: {
+        sass: '^1.18.0',
+        'sass-loader': '^7.1.0'
+      },
+      less: {
+        'less': '^3.0.4',
+        'less-loader': '^4.1.0'
+      },
+      stylus: {
+        'stylus': '^0.54.5',
+        'stylus-loader': '^3.0.2'
+      }
+    }
+
+    api.extendPackage({
+      devDependencies: deps[options.cssPreprocessor]
+    })
+  }
+
   const { projectName } = options
 
   const additionalOptions = {

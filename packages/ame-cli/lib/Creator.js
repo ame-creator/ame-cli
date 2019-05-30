@@ -27,10 +27,11 @@ module.exports = class Creator extends EventEmitter {
     }
 
     preset = cloneDeep(preset)
+    const version = require('../package.json').version
     // inject core service
     preset.plugins['ame-cli-service'] = Object.assign({
       projectName: name,
-      version: '0.1.0'
+      version
     }, preset)
 
     const pkg = {
