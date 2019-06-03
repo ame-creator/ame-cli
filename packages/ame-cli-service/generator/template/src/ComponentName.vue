@@ -9,31 +9,28 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { Component, Vue, Prop } from 'vue-property-decorator'
 import { VBtn } from 'vuetify/lib'
 
-export default {
-  name: '<%= componentName %>',
-
+@Component({
   components: {
     VBtn
-  },
-
-  props: {
-    title: {
-      type: String,
-      default: ''
-    }
   }
+})
+export default class <%= componentName %> extends Vue {
+  @Prop() readonly title!: string
 }
 </script>
 
-<style lang="stylus">
-.am-hehe
-  height: 100%
-  text-align: center
+<style lang="scss">
+.am-hehe {
+  height: 100%;
+  text-align: center;
 
-  .title
-    font-size: 20px
-    margin: 10px 0
+  .title {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+}
 </style>

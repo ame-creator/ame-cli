@@ -4,8 +4,8 @@
   </v-app>
 </template>
 
-<script>
-import Vue from 'vue'
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
 import Vuetify, { VApp } from 'vuetify/lib'
 import 'vuetify/src/stylus/app.styl'
 
@@ -13,18 +13,13 @@ import <%= componentName %> from '../src'
 
 Vue.use(Vuetify)
 
-export default {
+@Component({
   components: {
     VApp,
     <%= componentName %>
-  },
-
-  data () {
-    return {
-      options: {
-        title: 'Demo'
-      }
-    }
   }
+})
+export default class Example extends Vue {
+  options = { title: 'Demo' }
 }
 </script>

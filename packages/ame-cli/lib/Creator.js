@@ -31,7 +31,7 @@ module.exports = class Creator extends EventEmitter {
     // inject core service
     preset.plugins['ame-cli-service'] = Object.assign({
       projectName: name,
-      version
+      version: `^${version}`
     }, preset)
 
     const pkg = {

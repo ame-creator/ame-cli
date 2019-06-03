@@ -12,15 +12,25 @@ module.exports = (api, options, rootOptions) => {
     },
     dependencies: {
       'vue': '^2.6.10',
-      'xm-vue-ui': '^1.2.0'
+      'vue-class-component': '^7.0.2',
+      'vue-property-decorator': '^8.1.0',
+      'vuetify': '^1.5.0'
     },
     devDependencies: {
+      '@vue/cli-plugin-typescript': '^3.8.0',
+      '@vue/eslint-config-standard': '^4.0.0',
+      '@vue/eslint-config-typescript': '^4.0.0',
+      'eslint': '^5.16.0',
+      'eslint-plugin-vue': '^5.0.0',
+      'stylus': '^0.54.5',
+      'stylus-loader': '^3.0.2',
+      'typescript': '^3.4.3',
       'vue-template-compiler': '^2.6.10'
     }
   })
 
   if (!options.cssPreprocessor) {
-    options.cssPreprocessor = 'stylus'
+    options.cssPreprocessor = 'sass'
   }
 
   if (options.cssPreprocessor) {
