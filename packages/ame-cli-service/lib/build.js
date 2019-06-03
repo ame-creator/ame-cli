@@ -23,12 +23,40 @@
 //   console.log('build success.')
 // }
 
+const fs = require('fs')
+const path = require('path')
+const chalk = require('chalk')
 const Service = require('@vue/cli-service')
-const { toPlugin } = require('./util/util')
+const { toPlugin, findExisting } = require('./util/util')
 
 const babelPlugin = toPlugin('@vue/cli-plugin-babel')
 const eslintPlugin = toPlugin('@vue/cli-plugin-eslint')
+const typescriptPlugin = toPlugin('@vue/cli-plugin-typescript')
 const globalConfigPlugin = require('./util/globalConfigPlugin')
+
+function resolveEntry (context) {
+  const entry = findExisting(context, [
+    'src/index.js',
+    'src/index.ts'
+  ])
+
+  if (!entry) {
+    console.log(chalk.red(`Failed to locate entry file in ${chalk.yellow(context)}.`))
+    console.log(chalk.red(`Valid entry file should be one of: src/index.js, src/index.ts.`))
+
+    console.log()
+    process.exit(1)
+  }
+
+  if (!fs.existsSync(path.join(context, entry))) {
+    console.log(chalk.red(`Entry file ${chalk.yellow(entry)} does not exist.`))
+
+    console.log()
+    process.exit(1)
+  }
+
+  return entry
+}
 
 function createService (context, entry, asLib) {
   return new Service(context, {
@@ -39,6 +67,7 @@ function createService (context, entry, asLib) {
     plugins: [
       babelPlugin,
       eslintPlugin,
+      typescriptPlugin,
       globalConfigPlugin(context, entry, asLib)
     ]
   })
@@ -47,7 +76,7 @@ function createService (context, entry, asLib) {
 module.exports = function build (args) {
   const context = process.cwd()
   const asLib = true
-  const entry = 'src/index.js'
+  const entry = resolveEntry(context)
 
   createService(context, entry, asLib).run('build', {
     ...args,

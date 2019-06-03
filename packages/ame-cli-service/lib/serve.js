@@ -3,6 +3,7 @@ const { toPlugin } = require('./util/util')
 
 const babelPlugin = toPlugin('@vue/cli-plugin-babel')
 const eslintPlugin = toPlugin('@vue/cli-plugin-eslint')
+const typescriptPlugin = toPlugin('@vue/cli-plugin-typescript')
 const globalConfigPlugin = require('./util/globalConfigPlugin')
 
 function createService (context, entry, asLib) {
@@ -14,6 +15,7 @@ function createService (context, entry, asLib) {
     plugins: [
       babelPlugin,
       eslintPlugin,
+      typescriptPlugin,
       globalConfigPlugin(context, entry, asLib)
     ]
   })
