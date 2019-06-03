@@ -1,6 +1,6 @@
 {
   "name": "ame-cli-service",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "local service for vue-cli projects",
   "bin": {
     "ame-cli-service": "bin/ame-cli-service.js"
