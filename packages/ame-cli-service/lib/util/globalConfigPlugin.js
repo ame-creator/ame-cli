@@ -57,64 +57,6 @@ module.exports = function createConfigPlugin (context, entry, asLib) {
             .clear()
             .add(entry)
 
-        // const babelOptions = {
-        //   presets: [require.resolve('@vue/babel-preset-app')]
-        // }
-
-        // // set inline babel options
-        // config.module
-        //   .rule('js')
-        //     .include
-        //       .clear()
-        //       .end()
-        //     .exclude
-        //       .add(/node_modules/)
-        //       .add(/@vue\/cli-service/)
-        //       .end()
-        //     .uses
-        //       .delete('cache-loader')
-        //       .end()
-        //     .use('babel-loader')
-        //       .tap(() => babelOptions)
-
-        // // check eslint config presence
-        // // otherwise eslint-loader goes all the way up to look for eslintrc, can be
-        // // messed up when the project is inside another project.
-        // const ESLintConfigFile = findExisting(context, [
-        //   '.eslintrc.js',
-        //   '.eslintrc.yaml',
-        //   '.eslintrc.yml',
-        //   '.eslintrc.json',
-        //   '.eslintrc',
-        //   'package.json'
-        // ])
-        // const hasESLintConfig = ESLintConfigFile === 'package.json'
-        //   ? !!(require(path.join(context, 'package.json')).eslintConfig)
-        //   : !!ESLintConfigFile
-
-        // // set inline eslint options
-        // config.module
-        //   .rule('eslint')
-        //     .include
-        //       .clear()
-        //       .end()
-        //     .exclude
-        //       .add(/node_modules/)
-        //       .end()
-        //     .use('eslint-loader')
-        //       .tap(options => Object.assign({}, options, {
-        //         useEslintrc: hasESLintConfig,
-        //         baseConfig: {
-        //           extends: [
-        //             'plugin:vue/essential',
-        //             'eslint:recommended'
-        //           ],
-        //           parserOptions: {
-        //             parser: 'babel-eslint'
-        //           }
-        //         }
-        //       }))
-
         if (!asLib) {
           // set html plugin template
           const indexFile = findExisting(context, [
