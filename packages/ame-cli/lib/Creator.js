@@ -6,7 +6,13 @@ const Generator = require('@vue/cli/lib/Generator')
 const sortObject = require('@vue/cli/lib/util/sortObject')
 const writeFileTree = require('@vue/cli/lib/util/writeFileTree')
 const { installDeps } = require('@vue/cli/lib/util/installDeps')
-const { log, loadModule, stopSpinner } = require('@vue/cli-shared-utils')
+const {
+  log,
+  loadModule,
+  stopSpinner,
+  hasYarn,
+  hasPnpm3OrLater
+} = require('@vue/cli-shared-utils')
 
 module.exports = class Creator extends EventEmitter {
   constructor (name, context) {
@@ -29,10 +35,19 @@ module.exports = class Creator extends EventEmitter {
     preset = cloneDeep(preset)
     const version = require('../package.json').version
     // inject core service
-    preset.plugins['ame-cli-service'] = Object.assign({
-      projectName: name,
-      version: `^${version}`
-    }, preset)
+    preset.plugins['ame-cli-service'] = Object.assign(
+      {
+        projectName: name,
+        version: `^${version}`
+      },
+      preset
+    )
+
+    const packageManager = (
+      cliOptions.packageManager ||
+      (hasYarn() ? 'yarn' : null) ||
+      (hasPnpm3OrLater() ? 'pnpm' : 'npm')
+    )
 
     const pkg = {
       name,
@@ -63,7 +78,7 @@ module.exports = class Creator extends EventEmitter {
       // in development, avoid installation process
       await require('./util/setupDevProject')(context)
     } else {
-      await installDeps(context, 'npm', cliOptions.registry)
+      await installDeps(context, packageManager, cliOptions.registry)
     }
 
     const plugins = await this.resolvePlugins(preset.plugins)
