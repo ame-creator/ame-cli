@@ -1,3 +1,3 @@
-import <%= componentName %> from './<%= componentName %>.vue'
+import <%= acComponentName %> from './<%= componentName %>.vue'
 
-export default <%= componentName %>
+export default <%= acComponentName %>

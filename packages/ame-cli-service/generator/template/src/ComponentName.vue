@@ -1,5 +1,5 @@
 <template>
-  <div class="am-<%= componentNameLowercase %>">
+  <div class="ac-<%= componentNameLowercase %>">
     <div class="title">
       {{ title }}
     </div>
@@ -24,7 +24,7 @@ export default class <%= componentName %> extends Vue {
 </script>
 
 <style lang="scss">
-.am-hehe {
+.ac-<%= componentNameLowercase %> {
   height: 100%;
   text-align: center;
 

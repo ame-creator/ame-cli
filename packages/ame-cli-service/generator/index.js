@@ -3,7 +3,10 @@ const decamelize = require('decamelize')
 const { renameFiles } = require('./fileHelper')
 
 module.exports = (api, options, rootOptions) => {
+  const { projectName } = options
+
   api.extendPackage({
+    name: `@ac-vue/${projectName}`,
     scripts: {
       'serve': 'ame-cli-service serve',
       'build': 'ame-cli-service build',
@@ -54,11 +57,12 @@ module.exports = (api, options, rootOptions) => {
     })
   }
 
-  const { projectName } = options
+  const componentName = camelCase(projectName, { pascalCase: true })
 
   const additionalOptions = {
-    componentName: camelCase(projectName, { pascalCase: true }),
-    componentNameLowercase: decamelize(projectName, '-')
+    componentName,
+    componentNameLowercase: decamelize(projectName, '-'),
+    acComponentName: `Ac${componentName}`
   }
 
   api.render('./template', additionalOptions)
