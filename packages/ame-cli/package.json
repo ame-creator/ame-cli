@@ -1,6 +1,6 @@
 {
   "name": "ame-cli",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "Command line interface for rapid Vue.js development",
   "bin": {
     "ame": "bin/ame.js"
