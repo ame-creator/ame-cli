@@ -13,6 +13,10 @@ module.exports = (api, options, rootOptions) => {
       'doc:serve': 'ame-cli-service doc:serve',
       'doc:build': 'ame-cli-service doc:build'
     },
+    files: [
+      'dist'
+    ],
+    main: 'dist/index.umd.js',
     dependencies: {
       'vue': '^2.6.10',
       'vue-class-component': '^7.0.2',

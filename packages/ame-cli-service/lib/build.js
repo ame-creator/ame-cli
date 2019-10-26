@@ -75,7 +75,8 @@ module.exports = async function build (args) {
   await createService(context, entry, asLib).run('build', {
     ...args,
     entry,
-    target: 'lib'
+    target: 'lib',
+    name: 'index'
   })
 
   await rollupBuild()
